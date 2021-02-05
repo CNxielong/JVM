@@ -1,4 +1,4 @@
-package com.icbc.jvm.reflect;
+package com.icbc.jvm.classloader;
 
 /**
  * @Auther: XDragon
@@ -7,7 +7,7 @@ package com.icbc.jvm.reflect;
  */
 public class ClassLoaderChecker {
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
-        MyClassLoader myClassLoader = new MyClassLoader("C:\\Users\\Administrator\\Desktop\\","myClassLoader");
+        com.icbc.jvm.classloader.MyClassLoader myClassLoader = new MyClassLoader("C:\\Users\\Administrator\\Desktop\\","myClassLoader");
         Class test = myClassLoader.loadClass("Wali");//加载方法
         System.out.println(test.getClassLoader());
         test.newInstance();
