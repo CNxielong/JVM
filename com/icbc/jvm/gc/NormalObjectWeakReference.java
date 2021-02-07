@@ -1,6 +1,7 @@
 package com.icbc.jvm.gc;
 
 import java.lang.ref.ReferenceQueue;
+import java.lang.ref.SoftReference;
 import java.lang.ref.WeakReference;
 
 /**
